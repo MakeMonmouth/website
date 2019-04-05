@@ -71,5 +71,5 @@ pygmentsuseclasses         = true
   github                   = "//github.com/future-monmouth"
   facebook                 = "//facebook.com/groups/futuremonmouth/"
   twitter                  = "//twitter.com/futuremonmouth"
-  #instagram                = "//instagram.com/futuremonmouth"
+  instagram                = "//instagram.com/future_monmouth"
   include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
