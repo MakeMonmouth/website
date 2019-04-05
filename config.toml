@@ -1,3 +1,75 @@
 baseURL = "https://www.futuremonmouth.co.uk/"
 languageCode = "en-gb"
 title = "Future Monmouth"
+canonifyurls               = true
+enableEmoji                = true
+summaryLength              = 200
+Paginate                   = 3
+
+theme                      = "AllinOne"
+
+pygmentsuseclasses         = true
+
+
+[permalinks]
+  blog                     = "blog/:year-:month/:slug/"
+
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "Blog"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "blog/"  
+
+  [[menu.main]]
+    name                   = "Projects"
+    weight                 = -110
+    identifier             = "projects"
+    url                    = "projects/" 
+
+  [[menu.main]]
+    name                   = "About"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "about/"  
+
+ 
+
+[params]
+  faviconfile              = "img/logo.png"               # from static/
+  avatar                   = "img/logo.jpg"             # path to image in static dir e.g img/avatar.png 
+  author                   = "Future Monmouth"
+  description              = [""]           # appears in the site header when set to a non-empty string
+  welcome_head             = "Welcome to Future Monmouth!"
+  welcome_word             = "A loose collective of projects based in South Wales, UK, Future Monmouth run a Maker Space and a Community LoRaWAN project for the benefit of the community."
+
+  latestpostscount         = 5                             # how many posts to display on the home page
+  bloggroupby              = 'month'
+  dateform                 = "Jan 2, 2006"
+  dateformfull             = "2006-01-02  Monday  15:04:05"
+  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+
+  # slides
+  slidesDirPath            = "static/img/header-slides"    # path to image in local dir (path for hugo)
+  slidesDirPathURL         = "img/header-slides"    # path to image in static dir (for static pages)
+
+  # highlighting 
+  highlightjs              = true
+
+  # latex
+  katex                    = true
+
+  # links
+  # email                    = "you@email.com"
+  github                   = "//github.com/future-monmouth"
+  facebook                 = "//facebook.com/groups/futuremonmouth/"
+  twitter                  = "//twitter.com/futuremonmouth"
+  #instagram                = "//instagram.com/futuremonmouth"
+  include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
